@@ -1,6 +1,7 @@
 "use strict";
 {
-  document.getElementById("action").addEventListener("click", demo);
+  document.getElementById("demoButton").addEventListener("click", demo);
+  document.getElementById("actionButton").addEventListener("click", main);
 
   function demo() {
     
