@@ -21,6 +21,22 @@
 
   function main() {
     // We'll write code together here...
-  }
+    const growMeP = document.getElementById("grow-me");
+    growMeP.classList.add("big");
+    const shrinkMeP = document.getElementById("shrink-me");
+    shrinkMeP.classList.remove("big");
+    const allListItems = document.querySelectorAll("li");
+    for (let item of allListItems) {
+      console.log(item.innerText);
+    }
+    const linkEl = document.querySelector(".link");
+    linkEl.setAttribute("href", "https://www.example.com");
+    linkEl.innerText = "somewhere";
+    const hideMeP = document.getElementById("hide-me");
+    hideMeP.style.display = "none";
+    const showMeP = document.getElementById("show-me");
+    showMeP.style.display = "block";
 
+
+  }
 }
