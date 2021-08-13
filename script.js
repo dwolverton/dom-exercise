@@ -23,6 +23,7 @@
     // We'll write code together here...
     const growMeP = document.getElementById("grow-me");
     growMeP.classList.add("big");
+    const shrinkMeP = document.getElementById("shrink-me");
+    shrinkMeP.classList.remove("big");
   }
-
 }
