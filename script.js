@@ -21,6 +21,8 @@
 
   function main() {
     // We'll write code together here...
+    const growMeP = document.getElementById("grow-me");
+    growMeP.classList.add("big");
   }
 
 }
