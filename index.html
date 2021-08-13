@@ -9,9 +9,14 @@
 </head>
 <body>
   <h1>Welcome _______</h1>
-  <p>
-      <input id="name" placeholder="Enter your name" />
 
+  <form>
+    <label for="name">Name:</label>
+    <input id="name" placeholder="Enter your name" />
+    <button type="submit">Submit</button>
+  </form>
+
+  <p>
       <button id="demoButton">Demo</button>
       <button id="actionButton">Action!!!</button>
   </p>
@@ -22,6 +27,12 @@
   <p>
       A link to <a class="link" href="broken-link">nowhere</a>.
   </p>
+
+  <form id="adderForm">
+    <label>Text: <input id="textInput" /></label>
+    <label><input type="checkbox" /> Italicize</label>
+    <button type="submit">Add</button>
+  </form>
 
   <ol>
       <li>Document</li>

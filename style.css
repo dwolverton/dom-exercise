@@ -14,3 +14,13 @@ p {
   border-color: green;
   margin-left: 11em;
 }
+
+#adderForm {
+  border: 2px dashed gray;
+  padding: 10px;
+}
+
+#adderForm label {
+  display: block;
+  margin-bottom: 10px;
+}
