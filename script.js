@@ -32,5 +32,8 @@
     const linkEl = document.querySelector(".link");
     linkEl.setAttribute("href", "https://www.example.com");
     linkEl.innerText = "somewhere";
+    const hideMeP = document.getElementById("hide-me");
+    hideMeP.style.display = "none"
+
   }
 }
