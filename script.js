@@ -25,5 +25,12 @@
     growMeP.classList.add("big");
     const shrinkMeP = document.getElementById("shrink-me");
     shrinkMeP.classList.remove("big");
+    const allListItems = document.querySelectorAll("li");
+    for (let item of allListItems) {
+      console.log(item.innerText);
+    }
+    const linkEl = document.querySelector(".link");
+    linkEl.setAttribute("href", "https://www.example.com");
+    linkEl.innerText = "somewhere";
   }
 }
