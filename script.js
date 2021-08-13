@@ -33,6 +33,7 @@
     linkEl.setAttribute("href", "https://www.example.com");
     linkEl.innerText = "somewhere";
     const hideMeP = document.getElementById("hide-me");
+
     hideMeP.style.display = "none";
     const showMeP = document.getElementById("show-me");
     showMeP.style.display = "block";
@@ -40,3 +41,4 @@
 
   }
 }
+
