@@ -38,15 +38,22 @@
     const showMeP = document.getElementById("show-me");
     showMeP.style.display = "block";
   }
+
+  // handle name form submit
   const formEl = document.getElementById("nameForm");
   formEl.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log("Hello");
-  const nameInputElement = document.getElementById("name"); 
-  const name = nameInputElement.value;
-  console.log(name);
-  const h1 = document.querySelector("h1");
-  h1.innerText = `Welcome ${name}`;
+    // get name value from form input
+    const nameInputElement = document.getElementById("name"); 
+    const name = nameInputElement.value;
+    console.log(name);
+    // update the h1
+    const h1 = document.querySelector("h1");
+    h1.innerText = `Welcome ${name}`;
+    // clear form
     nameInputElement.value = "";
   });
+
+  
 }
