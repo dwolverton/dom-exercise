@@ -54,6 +54,17 @@
     // clear form
     nameInputElement.value = "";
   });
-
+  const adderFormEl = document.getElementById  ("adderForm");
+  adderFormEl.addEventListener("submit", (e) => {
+   e.preventDefault ();
+   
+   
+   const textInputElement = document.getElementById("textInput");
+  const text = textInputElement.value;
+  console.log (text);
+  }
+  
+  
+  )
   
 }
