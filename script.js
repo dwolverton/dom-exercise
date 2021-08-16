@@ -37,6 +37,17 @@
     hideMeP.style.display = "none";
     const showMeP = document.getElementById("show-me");
     showMeP.style.display = "block";
+
+    //ADDING AN ELEMENT
+    // 1. create element
+    const newListItem = document.createElement("li");
+    // 2. customize element
+    newListItem.innerText = "JavaScript";
+    newListItem.style.border = "1px solid green";
+    // 3. insert/append element
+    const listElement = document.getElementById("list");
+    // (existing parent).append(new child)
+    listElement.append(newListItem);
   }
 
   // handle name form submit
@@ -54,24 +65,19 @@
     // clear form
     nameInputElement.value = "";
   });
+
+  // handle form submit on adderForm
   const adderFormEl = document.getElementById  ("adderForm");
   adderFormEl.addEventListener("submit", (e) => {
-   e.preventDefault ();
-   
-   
-   const textInputElement = document.getElementById("textInput");
-  const text = textInputElement.value;
-  console.log (text);
-  const italicizeElement = document.getElementById("italicizeCheckBox");
-  const isChecked = italicizeElement.checked;
-  console.log(isChecked);
-  
-    
-
-
-  }
-  
-  
-  )
+    e.preventDefault ();
+    // get information from form inputs
+    const textInputElement = document.getElementById("textInput");
+    const text = textInputElement.value;
+    console.log (text);
+    const italicizeElement = document.getElementById("italicizeCheckBox");
+    const isChecked = italicizeElement.checked;
+    console.log(isChecked);
+    // add new <li> to the <ol>
+  });
   
 }
