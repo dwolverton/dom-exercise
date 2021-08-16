@@ -37,8 +37,10 @@
     hideMeP.style.display = "none";
     const showMeP = document.getElementById("show-me");
     showMeP.style.display = "block";
-
-
   }
+  const formEl = document.getElementById("nameForm");
+  formEl.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log("Hello");
+  });
 }
-
