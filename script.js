@@ -42,5 +42,11 @@
   formEl.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log("Hello");
+  const nameInputElement = document.getElementById("name"); 
+  const name = nameInputElement.value;
+  console.log(name);
+  const h1 = document.querySelector("h1");
+  h1.innerText = `Welcome ${name}`;
+    nameInputElement.value = "";
   });
 }
