@@ -62,6 +62,13 @@
    const textInputElement = document.getElementById("textInput");
   const text = textInputElement.value;
   console.log (text);
+  const italicizeElement = document.getElementById("italicizeCheckBox");
+  const isChecked = italicizeElement.checked;
+  console.log(isChecked);
+  
+    
+
+
   }
   
   
