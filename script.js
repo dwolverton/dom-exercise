@@ -77,7 +77,15 @@
     const italicizeElement = document.getElementById("italicizeCheckBox");
     const isChecked = italicizeElement.checked;
     console.log(isChecked);
+    
     // add new <li> to the <ol>
+    const listElement = document.querySelector("ol");
+    const newListItem = document.createElement("li");
+    newListItem.innerText = text;
+    if (isChecked) {
+      newListItem.style.fontStyle = "italic";
+    }    
+    listElement.append(newListItem);
   });
   
 }
